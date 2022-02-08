@@ -23,7 +23,7 @@ For example, suppose we measure the body lengths of male guppies (in mm) collect
 We will use a one-sample, two-tailed t-test to see if we should reject the null hypothesis or not.
 
 -	We use a **one-sample** test because we only have one sample.
--	We use a **two-tailed** t-test because we want to know if our data suggest that the true (population) mean is different from 20 mm in either direction rather than just to see if it is greater than or less than 20 mm (in which case we would use a one-tailed test).
+-	We use a **two-tailed** (also referred to as a **two-sided**) t-test because we want to know if our data suggest that the true (population) mean is different from 20 mm in either direction rather than just to see if it is greater than or less than 20 mm (in which case we would use a one-tailed test).
 -	We’re using a **t-test** because we don’t know any better yet and because I’m telling you to. We’ll look at what the precise assumptions/requirements need to be in a moment.
 
 Make sure you have downloaded the data (see: [Datasets](#index-datasets)) and placed it in the `data/raw` folder within your working directory.
@@ -208,7 +208,7 @@ The `t_test()` function requires three arguments:
 
 1. the `formula`, here we give it `length ~ 1` to indicate it is a one-sample test on `length`
 2. the `mu` is the mean to be tested under the null hypothesis, here it is 20
-3. the `alternative` argument gives the type of alternative hypothesis and must be one of `two.sided`, `greater` or `less`. We have no prior assumptions on whether the alternative fish length would be greater or less than 20, so we choose `two.sided`.
+3. the `alternative` argument gives the type of alternative hypothesis and must be one of `two.sided` (i.e. two-tailed), `greater` or `less`. We have no prior assumptions on whether the alternative fish length would be greater or less than 20, so we choose `two.sided`.
 
 ## Interpreting the output and report results
 This is the output that you should now see in the console window:
